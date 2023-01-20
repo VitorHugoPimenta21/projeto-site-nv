@@ -48,7 +48,7 @@ header > nav > a{
     text-decoration: none;
     color: var(--cor1);
     padding-right: 10px;
-
+    font-size: 20px;
 }
 
 header > nav > a:hover{
