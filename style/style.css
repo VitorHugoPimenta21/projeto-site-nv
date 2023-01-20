@@ -87,12 +87,12 @@ section{
 
 .dicas{
     background-color: var(--cor3);
-    width: 800px;
-    height: 200px;
+    max-width: 800px;
     color: white;
     box-shadow: inset 1px 1px 20px rgba(0, 0, 0, 0.329);
     padding: 40px;
     border-radius: 10px;
+    font-size: 30px;
 }
 
 section > div > h2{
