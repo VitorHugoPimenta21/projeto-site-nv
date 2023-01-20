@@ -1,68 +1,120 @@
-@charset "UTF8";
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+:root{
+    --cor1: #F2F2F2;
+    --cor2: #3659024d;
+    --cor3: #f28705e0;
+    --cor4: #aacf23;
+    --cor5: #F21D1D;
+
+    --font-titulo-site: 'Satisfy';
+    --font-titulo-artigo: serif;
+    --font-conteudo: Arial;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
-    background-color: lightblue;
+    background-color: rgba(245, 222, 179, 0.445);
 }
 
 header{
-    background-image: linear-gradient(to bottom, rgb(5, 21, 247), rgb(97, 40, 219));
-    height: 100px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-top: -2.1em;
-
+    background-color: var(--cor4);
+    padding: 20px;
 }
 
 header > h1{
+    color: #F2F2F2;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521);
+    font-family: var(--font-titulo-site);
+    font-size: 5em;
+    text-decoration: underline;
     text-align: center;
-    color: white;
-    font-size: 3em;
-    margin-bottom: -20px;
 }
 
-header > p{
-    color: white;
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 0px;
-}
-
-nav{
-    background-color: blue;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin: 1em;
-    max-height: 2.7em;
+header > nav{
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    height: 30px;
+    font-size: 1.5em;
+    border-radius: 10px;
     padding: 10px;
-    text-align: center;
 }
 
-
-nav > a{
-    color: aliceblue;
-    font-size: 19.5px;
-    margin-right: 5px;
+header > nav > a{
     text-decoration: none;
-    border-radius: 0px;
+    color: var(--cor1);
+    padding-right: 10px;
+
 }
 
-.home:hover{
+header > nav > a:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.container{
+    background-color: var(--cor2);
+    padding: 20px;
+}
+
+.titulo-artigo{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: var(--font-titulo-artigo);
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+    font-variant: small-caps;
+}
+
+.artigo{
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+section{
+    padding: 10px;
+    background-image: url('/imagens/fruit-g908e78f63_1920.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dicas{
+    background-color: var(--cor3);
+    width: 800px;
+    height: 200px;
+    color: white;
+    box-shadow: inset 1px 1px 20px rgba(0, 0, 0, 0.329);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+section > div > h2{
+    font-size: 30px;
+    font-family: var(--font-titulo-artigo);
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+aside{
+    background-color: rgba(245, 222, 179, 0.445);
+    padding: 25px;
+}
+
+aside > h3{
+    font-size: 30px;
+    font-family: 'Satisfy';
     color: black;
-    background-color: red;
+}
+
+footer{
+    background-color: darkgreen;
+    color: white;
     text-align: center;
-    padding: 5px;
-    border-bottom-left-radius: 10px;
-}
-
-.dica:hover{
-    color: black;
-    background-color: red;
-    padding: 5px;
-}
-
-.contato:hover{
-    color: black;
-    background-color: red;
-    padding: 5px;
-    border-bottom-right-radius: 10px;
 }
