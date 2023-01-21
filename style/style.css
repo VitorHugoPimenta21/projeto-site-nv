@@ -19,7 +19,7 @@
 }
 
 body{
-    background-color: rgba(245, 222, 179, 0.445);
+    background-color: rgba(245, 222, 179, 0.685);
 }
 
 header{
@@ -104,7 +104,7 @@ section > div > h2{
 }
 
 aside{
-    background-color: rgba(245, 222, 179, 0.445);
+    background-color: rgba(245, 222, 179, 0.685);
     padding: 25px;
 }
 
@@ -118,4 +118,13 @@ footer{
     background-color: darkgreen;
     color: white;
     text-align: center;
+}
+
+footer > h3 > a{
+    color: white;
+    text-decoration: none;
+}
+
+footer > h3 > a:hover{
+    text-decoration: underline;
 }
